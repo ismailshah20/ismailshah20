@@ -2,8 +2,8 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # roz raat 12 baje (UTC) run hoga
-  workflow_dispatch:     # manually run karne ka option
+    - cron: "0 0 * * *"   # Roz raat 12 baje (UTC) run hoga
+  workflow_dispatch:       # Manually run karne ka option
 
 permissions:
   contents: write
@@ -30,9 +30,6 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           author_name: github-actions
-          author_email: actions@github.com
-          message: "Generated snake animations"
-          add: 'dist'e: github-actions
           author_email: github-actions@github.com
           message: "chore: generate github-snake svgs"
           add: "dist/*"
